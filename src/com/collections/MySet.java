@@ -2,6 +2,8 @@ package com.collections;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 public class MySet {
 	/*
@@ -49,6 +51,7 @@ public class MySet {
 	 */
 		
 	public static void main(String[] args) {
+		System.out.println("Non sorted set");
 		Set<String> s = new HashSet<>();
 		s.add("A");
 		s.add("B");
@@ -60,6 +63,38 @@ public class MySet {
 		
 		s.remove("C");
 		System.out.println(s);
+		/**
+		 * Method will be same as List
+		 */
+		
+		System.out.println("\nSorted set in Set");
+		Set<String> s1 = new TreeSet<>();
+		s1.add("B");
+		s1.add("D");
+		s1.add("A");
+		s1.add("Z");
+		s1.add("X");
+		s1.add("P");
+		System.out.println(s1);
+		
+		s1.remove("D");
+		System.out.println(s1);
+		/**
+		 * Method will be same as List
+		 */
+		
+		System.out.println("\nSorted set in SortedSet");
+		SortedSet<String> s3 = new TreeSet<>();
+		s3.add("B");
+		s3.add("D");
+		s3.add("A");
+		s3.add("Z");
+		s3.add("X");
+		s3.add("P");
+		System.out.println(s3);
+		
+		s3.remove("D");
+		System.out.println(s3);
 		/**
 		 * Method will be same as List
 		 */
