@@ -10,7 +10,14 @@ public class Message {
 	public Message(String message) {
 		super();
 		this.message = message;
-		System.out.println("Message : " + message);
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
 	}
 
 }
